@@ -8,8 +8,8 @@ module Openapi
       @controller = controller
       @routes = []
 
-      formatter = ActionDispatch::Routing::ConsoleFormatter.new
-      @routes_table = routes_inspector.format(formatter, controller_slug)
+      formatter = ActionDispatch::Routing::ConsoleFormatter::Sheet.new
+      @routes_table = routes_inspector.format(formatter, { controller: controller_slug })
 
       parse!
     end

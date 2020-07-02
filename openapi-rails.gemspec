@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   # DSL for pure Ruby code blocks that can be turned into JSON
   s.add_dependency 'swagger-blocks', '~> 2.0'
   # A set of Rails responders to dry up application controllers
-  s.add_dependency 'responders', '~> 2.3'
+  s.add_dependency 'responders'
   # C extensions to accelerate the Ruby BSON serialization
   s.add_dependency 'bson_ext'
   # Fast streaming JSON parsing and encoding library for Ruby
